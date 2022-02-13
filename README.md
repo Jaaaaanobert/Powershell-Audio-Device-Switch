@@ -11,7 +11,9 @@ Copy the ID's of your playback devices between which you want to switch and put 
 # Use as Macro
 You can run this script i.E. by creating a shortcut like:
 
+```
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden "C:\Tools\Playback_Switch\Device_Switch.ps1"
+```
 
 It is also possible to bind this on a shortcut of your Keyboard, i.e., in the iCue-Software.
 
