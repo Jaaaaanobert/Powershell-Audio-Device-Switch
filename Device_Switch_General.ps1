@@ -17,12 +17,12 @@ $balmsg.ShowBalloonTip(2000)
 
 
 if((Get-AudioDevice -List | where {($_.Default -eq $true) -and ($_.Type -like "Playback") -and ($_.ID -like $idSpeaker )}).Default -like "true") {
-    # Switch to Speaker
+    # Switch to Headphones
     Set-AudioDevice -ID $idHeadphones -Verbose | Out-Null
-    Notificiation("speaker")
+    Notificiation("headphones")
 
 } elseif((Get-AudioDevice -List | where {($_.Default -eq $true) -and ($_.Type -like "Playback") -and ($_.ID -like $idHeadphones )}).Default -like "true") {
-    # Switch to Headset
+    # Switch to Speaker
     Set-AudioDevice -ID $idSpeaker -Verbose | Out-Null
-    Notificiation("headphones")
+    Notificiation("speaker")
 }
