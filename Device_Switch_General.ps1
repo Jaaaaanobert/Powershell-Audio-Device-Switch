@@ -2,8 +2,6 @@ $idSpeaker = "YOUR DEVICE ID"
 $idHeadphones = "YOUR DEVICE ID"
 
 Function Notificiation([string]$name) {
-$idSpeaker = "{0.0.0.00000000}.{6eb60296-bf16-4c6e-aa23-524a5d6d2949}"
-$idHeadphones = "{0.0.0.00000000}.{a7b74d86-6712-4ea9-901a-8dd769abbee7}"
 
     Add-Type -AssemblyName System.Windows.Forms
 $global:balmsg = New-Object System.Windows.Forms.NotifyIcon
